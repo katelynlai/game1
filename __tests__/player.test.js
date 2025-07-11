@@ -1,4 +1,4 @@
-const Player = require('./player.js');
+const Player = require('../player.js');
 
 describe('Player', () => {
   test('initializes with name and mark', () => {

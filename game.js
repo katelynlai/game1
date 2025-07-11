@@ -92,6 +92,10 @@ class Game {
     }
 }
 
-// Start the game
-const game = new Game();
-game.start();
+module.exports = Game;
+
+// Start the game only if this file is run directly
+if (require.main === module) {
+    const game = new Game();
+    game.start();
+}

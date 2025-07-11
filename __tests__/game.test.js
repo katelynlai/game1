@@ -1,4 +1,4 @@
-const Game = require('./game');
+const Game = require('../game');
 
 describe('Game', () => {
   test('initializes players and board', () => {
