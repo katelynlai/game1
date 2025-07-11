@@ -35,3 +35,5 @@ class Board {
 // Example usage:
 let myBoard = new Board(['x','o','x','x','o','o','o','o','x']);
 myBoard.printFormattedBoard();
+
+module.exports = Board;
