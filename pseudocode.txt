@@ -1,0 +1,38 @@
+START game
+
+INITIALISE a 3x3 board as an array with 9 empty spaces
+SET currentPlayer to "X"
+
+WHILE no one has won and the board is not full:
+    DISPLAY the board in 3x3 format
+    PROMPT currentPlayer to pick a position (1–9)
+
+    IF the position is already taken OR out of range:
+        SHOW "Invalid move" message
+        CONTINUE to next loop iteration
+
+    PLACE currentPlayer’s mark (X or O) in the chosen position
+
+    CHECK if currentPlayer has won:
+        IF yes:
+            DISPLAY the board
+            DISPLAY "Player X/O wins!"
+            END game
+
+    CHECK if board is full:
+        IF yes:
+            DISPLAY the board
+            DISPLAY "It's a draw!"
+            END game
+
+    SWITCH currentPlayer (X -> O or O -> X)
+
+AFTER the game ends:
+    ASK "Play again? (y/n)"
+    IF yes:
+        RESET board
+        RESTART game
+    ELSE:
+        EXIT program
+
+END
